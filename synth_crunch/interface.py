@@ -6,35 +6,8 @@ Asset = Literal["BTC", "ETH", "XAU", "SOL"]
 
 class SynthMiner(ABC):
 
-    # TODO: This prevent dynamic parameters... But we need some kind of pre/post processing to validate inputs and ensure outputs are serializable.
-    def generate_simulations(
-        self,
-        asset: Asset,
-        current_price: float,
-        start_time: str = "",
-        time_increment=300,
-        time_length=86400,
-        num_simulations=1,
-        sigma=0.01,
-    ):
-        if start_time == "":
-            raise ValueError("Start time must be provided.")
-
-        result = self.do_generate_simulations(
-            asset,
-            current_price,
-            start_time,
-            time_increment,
-            time_length,
-            num_simulations,
-            sigma,
-        )
-
-        # TODO: Convert to python list, could this step be skipped?
-        return result
-
     @abstractmethod
-    def do_generate_simulations(
+    def generate_simulations(
         self,
         asset: Asset,
         current_price: float,
@@ -59,4 +32,5 @@ class SynthMiner(ABC):
         Returns:
             numpy.ndarray: Simulated price paths.
         """
+
         pass
