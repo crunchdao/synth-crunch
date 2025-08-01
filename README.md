@@ -130,7 +130,7 @@ infrastructure:
 ```
 
 3. Import a dummy model in `storage/submissions/1`:
-   - For `main.py`, take the example [from above](./README.md#your-first-model)
+   - For `main.py`, take the example [from above](#your-first-model)
    - For the `requirements.txt`:
 
 <!-- TODO Replace with correct name when package is available on PyPI -->
@@ -166,13 +166,13 @@ python3 neurons/validator.py --network test --netuid 247 --logging.debug --loggi
 ```
 
 > [!NOTE]
-> The fork has been hacked to only work with @Caceresenzo's keys which have been hardcoded.
+> The fork has been hacked to only work with [@Caceresenzo](https://github.com/Caceresenzo)'s keys which have been hardcoded.
 
 ## Run the Synth Miner (via our CLI)
 
 Run the Synth Miner **via our CLI** locally:
 
-2. Clone the repository:
+1. Clone the repository:
 
 <!-- TODO Publish on PyPI and remove the command? -->
 ```bash
@@ -194,7 +194,7 @@ synth-crunch infra --netuid 247 --logging.debug --logging.trace --subtensor.netw
 ```
 
 > [!NOTE]
-> Again, the code has been hacked to only work with @Caceresenzo's keys which have been hardcoded.
+> Again, the code has been hacked to only work with [@Caceresenzo](https://github.com/Caceresenzo)'s keys which have been hardcoded.
 
 ## Trigger a Simulation
 
