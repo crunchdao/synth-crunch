@@ -33,6 +33,11 @@ setup(
         'infra': read_requirements("requirements.infra.txt"),
     },
     zip_safe=False,
+    entry_points={
+        'console_scripts': [
+            'synth-crunch=synth_crunch.cli:cli',
+        ],
+    },
     classifiers=[
         'Intended Audience :: Developers',
         'Programming Language :: Python :: 3.10',
