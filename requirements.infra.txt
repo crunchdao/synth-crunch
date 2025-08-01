@@ -1,0 +1,1 @@
+synth_subnet @ git+https://github.com/mode-network/synth-subnet.git#egg=synth_subnet
