@@ -1,6 +1,8 @@
-# synth crunch
+# Synth on CrunchDAO
 
-- [synth crunch](#synth-crunch)
+Participate to the [Synth Subnet](https://github.com/mode-network/synth-subnet) directly via the CrunchDAO Platform, making it easier to have your code enter the protocol at no cost!
+
+- [Synth on CrunchDAO](#synth-on-crunchdao)
 - [Install](#install)
 - [Usage](#usage)
   - [Your first model](#your-first-model)
